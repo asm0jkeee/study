@@ -6,7 +6,20 @@
 
 ## Установка кластера с MSA Platform
 
-Установка через платформу не успешно.
+Не хватает chrony
+Добавить репозиторий
+```
+deb http://ftp.de.debian.org/debian buster main
+```
+И добавить PUB_KEY
+```
+apt-key adv --recv-key --keyserver pgpkeys.mit.edu {PUB_KEY}
+```
+
+Установить chrony
+```
+sudo apt  install -y chrony
+```
 
 ## Установка кластера вручную
 
