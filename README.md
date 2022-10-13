@@ -12,16 +12,9 @@
 
 1. containerd установлен, работает
 2. установка kubeadm, kubectl и kubelet 
-При обновлении пакетов выдает ошибку:
+При попытке установки выдает ошибку:
 ```
-sudo apt-get update
-Игн:1 cdrom://OS Astra Linux 1.7.0 1.7_x86-64 DVD  1.7_x86-64 InRelease
-Сущ:2 cdrom://OS Astra Linux 1.7.0 1.7_x86-64 DVD  1.7_x86-64 Release
-Пол:4 https://packages.cloud.google.com/apt kubernetes-xenial InRelease [9 383 B]
-Пол:5 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 Packages [60,1 kB]
-Получено 69,5 kB за 1с (70,5 kB/s)
-Чтение списков пакетов… Готово
-nefedov@astra:~$ sudo apt-get install -y kubelet kubeadm kubectl
+sudo apt-get install -y kubelet kubeadm kubectl
 Чтение списков пакетов… Готово
 Построение дерева зависимостей
 Чтение информации о состоянии… Готово
